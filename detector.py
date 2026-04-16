@@ -2,7 +2,7 @@ import torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
 class NewsDetector:
-    def __init__(self, model_path="c:/LLM/clickbait_detector_final"):
+    def __init__(self, model_path="./clickbait_detector_final"):
         """
         학습된 탐지 모델을 로드하여 예측을 수행하는 클래스
         """

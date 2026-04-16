@@ -47,7 +47,7 @@ with st.sidebar:
 # 모델 로드 (캐싱)
 @st.cache_resource
 def load_models():
-    model_path = "c:/LLM/clickbait_detector_final"
+    model_path = "./clickbait_detector_final"
     if not os.path.exists(model_path):
         return None
     return NewsDetector(model_path)
@@ -146,8 +146,8 @@ def show_visualization_page():
     이 페이지에서는 **KLUE-BERT** 모델의 학습 과정과 최종 성능 지표를 시각화하여 보여줍니다.
     """)
     
-    dashboard_path = "c:/LLM/training_dashboard.png"
-    results_path = "c:/LLM/training_results.json"
+    dashboard_path = "./training_dashboard.png"
+    results_path = "./training_results.json"
     
     if os.path.exists(dashboard_path):
         st.image(dashboard_path, use_container_width=True, caption="모델 성능 대시보드")

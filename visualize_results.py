@@ -111,4 +111,4 @@ def create_dashboard(json_path, output_image):
     print(f"Dashboard saved to {output_image}")
 
 if __name__ == "__main__":
-    create_dashboard("c:/LLM/training_results.json", "c:/LLM/training_dashboard.png")
+    create_dashboard("./training_results.json", "./training_dashboard.png")
