@@ -1,0 +1,11 @@
+torch
+transformers
+datasets
+pandas
+scikit-learn
+streamlit
+google-generativeai
+evaluate
+accelerate
+tf-keras
+python-dotenv
